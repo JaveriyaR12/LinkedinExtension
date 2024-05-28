@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "My LinkedIn Profile Picture Modifier",
+  "version": "1.0",
+  "description": "A Chrome extension that modifies LinkedIn profile pictures.",
+  "permissions": [
+    "activeTab"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["https://www.linkedin.com/*"],
+      "js": ["content.js"]
+    }
+  ]
+}
